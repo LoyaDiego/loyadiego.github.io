@@ -1,0 +1,163 @@
+/*por etiqueta*/
+body{
+    height: 900px;
+    background-color: rgb(204, 183, 224);
+    background-image: url(../img/fondo.png);
+    background-size: 100% 100%;
+}
+h1{
+    color: rgb(104, 8, 8);
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 100px;
+}
+h1 samp{
+
+color: cyan;
+}
+button{
+    background-color: burlywood;
+    color: cyan;
+}
+#btninicio{
+    width: 300px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 45%;
+    color: darkred;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 30px;
+    box-shadow: 13px 16px 55px 7px rgba (0,0,0,1);
+}
+li{
+    color: white;
+}
+/*por clase*/
+.activo{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+#barril{
+    bottom:2%;
+    left: 35%;
+    width: 150px;
+    position: absolute;
+    transform: rotate(18deg);
+    animation-name: barrilAnim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+#barril img{
+    width: 100%;
+}
+#barril2{
+    bottom:2%;
+    right: 35%;
+    width: 150px;
+    position: absolute;
+    transform: rotate(-18deg);
+    animation-name: barril2Anim;
+    animation-duration: 10s;
+ 
+}
+#barril2 img{
+    width: 100%;
+}
+#personaje{
+    top: 0%;
+    left: 20%;
+    width: 200px;
+    position: absolute;
+    animation-name: personajeAnim;
+    animation-duration: 10s;
+}
+#personaje img{
+    width: 100%;
+}
+#logo{
+    top: 2%;
+    right: 2%;
+    width: 200px;
+    position: absolute;
+    transition: 0.1s ease-in all;
+}
+#logo img{
+    width: 100%;
+}
+#logo:hover{
+    transform: scale(0.7);
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    border-radius: 50px;
+}
+@keyframes personajeAnim{
+    0%{
+        top: 0%;
+        left: 20%;
+    }
+    10%{
+        top: 10%;
+        left: 40%;
+    }
+    20%{
+        top: 18%;
+        left: 40%;
+    }
+    30%{
+        top: 30%;
+        left: 50%;
+    }
+    40%{
+        top: 70%;
+        left: 55%;
+    }
+    50%{
+        transform: rotate(-18deg);
+        top: 70%;
+        left: 55%;
+    }
+    60%{
+        transform: rotate(-180deg);
+        top: 70%;
+        left: 55%;
+    }
+    70%{
+        transform: rotate(0deg);
+        top: 70%;
+        left: 55%;
+    }
+    100%{
+        top: -30%;
+        left: 55%;
+    }
+}
+@keyframes barrilAnim{
+    0%{
+        transform: rotate(18deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(18deg);
+    }
+}
+@keyframes barril2Anim{
+    0%{
+        transform: rotate(-18deg);
+    }
+    50%{
+        transform: rotate(-18deg);
+    }
+    60%{
+        transform: rotate(-180deg);
+    }
+    80%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
