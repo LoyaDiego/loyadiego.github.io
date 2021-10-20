@@ -22,6 +22,7 @@ header{
     justify-content: space-between;
     position: fixed;
     z-index: 4;
+    margin-top: -20px;
 }
 header #logo{
     margin: 10px;
@@ -55,13 +56,15 @@ header nav ul li:hover{
 header nav ul li a:hover{
     color: var(--main-color);
 }
-section #main{
+section#main{
     background-color: black;
-    height: 100vh;
+    height: 98vh ;
+    width: 100%;
+    overflow: hidden;
 }
 #main video{
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
 } 
 #main #overlay{
     width: 100%;
@@ -106,3 +109,148 @@ a.btn{
     text-decoration: none   ;
     color: white;
 }
+#about, #contacto{
+    width: 80%;
+    height: 700px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#about .col, #contacto .col{
+    float: left;
+    width: 50%;
+    text-align: justify;
+}
+#about > h2{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+#about > .col > h2{
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    padding-bottom: 50px;
+}
+#about .col img{
+    width: 70%;
+    display: block;
+    margin: 20px auto;
+}
+#about .col p{
+    margin-top: 50px;
+}
+#misproyectos{
+width: 100%;
+height: 700px;
+}
+#misproyectos .sitio{
+    width: 20%;
+    height: 400px; 
+    margin-top: 100px;  
+    background-color: white;
+    float: left;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    justify-content: center;
+}
+#misproyectos .sitio img{
+    width: 100%;
+    display: block;
+}
+.borde{ 
+    border-radius: 30px;
+    overflow: hidden;
+}
+#misproyectos >.sitio >h2{
+    font-size: 2rem;
+    margin-top: 15px;
+    margin-left: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:bold;
+}
+#misproyectos >.sitio >h3{
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-left: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+.bt{
+    width: 200px;
+    height: 100px;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+.bt1{
+    background-color: var(--main-color);
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 25%;
+}
+a.bt{
+    text-decoration: none ;
+    color: white;
+}
+#pepe{
+    width: 100%;
+    height: 400px;
+}
+#pepe img{
+    width: 100%;
+    height: 400px;  
+    background-color: rgba(0,0,0,0.8);  
+    z-index: 1;
+}
+#pepe > h2{
+    margin-top: -270px;
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    z-index: 3;
+}
+#form{
+    width: 100%;
+    height: 700px;
+}
+#form .equis{
+    float: left;
+    margin-top: 10%;
+    width: 50%;
+}
+#form .equis #oli{
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+#form #oli #cc{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    
+}
+#final{
+    width: 100%;
+    height: 200px;
+}
+#final .item{
+width: 100%;
+height: 100%;
+background-color: black;
+}
+#final h3{
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8rem;
+    margin-bottom: -100px;
+}
+
+
