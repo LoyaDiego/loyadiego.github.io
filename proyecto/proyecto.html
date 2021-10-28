@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DL PcAssambled</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+    <header>
+        <div id="head" class="item">
+            <h1>DL PcAssambled</h1>
+                </div>
+            <nav class="item">
+                <ul id="menuweb">
+                <li>
+                    <a href="#inicio" data-scroll="">Inicio</a>
+                </li>
+                <li>
+                    <a href="#about" data-scroll="">Computadoras</a>
+                </li>
+                <li>
+                    <a href="#a" data-scroll>Acerca</a>
+                </li>
+                <li>
+                    <a href="#contacto" data-scroll>Contacto</a>
+                </li>
+                
+            </nav>
+    </header>
+
+    <section id="inicio">
+       <div id="contenedor">
+               <h1>Ingeniero Diego Alejandro Loya Nevarez </h1>
+               <p>Armado de computadoras de calidad adaptadas a las necesidades de los clientes</p>
+               <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(223, 223, 223);"></path></svg></div>
+       </div>
+      </section>
+
+       <section id="computadoras">
+           <div id="items">
+               <h2>Computadoras</h2>
+            <div class="sitio borde">
+                <img src="./img/pc.jpg">
+                <h2>Pc Gamer</h2>
+                <a href="#" class="bt bt1">Ir</a>
+            </div>
+            <div class="sitio borde">
+                <img src="./img/pc.jpg">
+                <h2>Pc de trabajo</h2>
+                <a href="#" class="bt bt1">Ir</a>
+            </div>
+            <div class="sitio borde">
+                <img src="./img/pc.jpg">
+                <h2>Personalizar</h2>
+                <a href="#" class="bt bt1">Ir</a>
+            </div>
+           </div>
+       </section>
+       <section id="about">
+        <h2 data-aos="flip-left">About me</h2>
+        <div class="col">
+            <img id="a" src="./img/nvidia.jpg">
+        </div>
+        <div class="col">
+
+            <h2>Diego Loya</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Perspiciatis assumenda saepe quaerat sed maiores omnis ipsa ullam! 
+                Molestiae tempore aliquam, maiores necessitatibus doloribus sequi voluptas, 
+                mollitia dolor minima dolorum veritatis?
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Perspiciatis assumenda saepe quaerat sed maiores omnis ipsa ullam! 
+                Molestiae tempore aliquam, maiores necessitatibus doloribus sequi voluptas, 
+                mollitia dolor minima dolorum veritatis?
+            </p>
+        </div>
+    </section>
+    <section id="contacto">
+        <div class="item">
+            <h3>Diego Loya <br>2021</h3>
+            <a class="face" href="#inicio">Facebook</a>
+            <a class="insta" href="#inicio">Instagram</a>
+            <a class="twitter" href="#inicio">Twitter</a>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <script>
+          AOS.init();
+          var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
+  
+</body>
+</html>
