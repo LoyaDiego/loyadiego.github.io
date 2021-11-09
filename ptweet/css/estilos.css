@@ -2,21 +2,69 @@
     margin: 0px;
     padding: 0px;
 }
-main{
+#login{
     display: flex ;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
 }
-main .col{
+#login .col{
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
     height: 100vh;
 }
-main .col:first-child{
+#login .col:first-child{
     flex: 2;
     background-image: url(../img/fondo.png);
     background-size: 100% 100%;
+}
+#login .col:last-child{
+    padding: 100px 50px 0px 50px;
+}
+#login .col:last-child h1{
+    font-size: 2rem;
+    text-align: right;
+}
+#login .col:last-child h1 img{
+    width: 300px;
+}
+#login .col:last-child h2{
+    font-size: 1.4rem;
+    text-align: right;
+}
+fieldset{
+    padding: 5px;
+    padding-top: 20px;
+    border: none;
+}
+label{
+    font-weight: lighter;
+}
+fieldset input{
+    padding: 5px;
+    height: 30px;
+    outline-color:yellow;
+    border: 1px solid violet;
+    display: block;
+    width: 100%;
+}
+button{
+    padding: 5px;
+    background-color: violet;
+    background-image: url(../img/peluchemorado.jpg);
+    background-size: 100% 100%;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    color: yellow;
+    height: 40px;
+    min-width: 150px;
+    font-size: 1.2rem;
+    transition: 0.5s ease-out all;
+}
+button:hover{
+    background-image: url(../img/plucheazul.jpg);
+    color: yellow;
+    cursor: pointer;
 }
